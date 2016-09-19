@@ -30,10 +30,15 @@ docker attach `docker-compose ps -q`
 
 ## Docker Image on Docker Hub
 
-Get prebuild Docker image by running
+Get prebuilt Docker image by running
 
 ``` sh
 docker pull rayson/spigot
 ```
+
+The executable jar file `spigot-*.jar` is resident in `/opt/spigot/lib/`
+and the default working directory is `/opt/spigot/data`.
+Please mount the working directory as volume if necessary.
+See Dockerfile for more information.
 
 [Spigot]: https://www.spigotmc.org/wiki/about-spigot/
