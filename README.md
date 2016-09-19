@@ -8,7 +8,7 @@ and/or containers for [Spigot].
 ## Run Spigot in Docker
 
 Suppose you have Docker Engine and Docker Compose installed.
-If not, see <https://docs.docker.com/engine/installation/> and <https://docs.docker.com/compose/install/>.
+If not, see <https://docs.docker.com/engine/installation/> and <https://docs.docker.com/compose/install/>. 
 
 ``` sh
 # Clone from Github
@@ -26,6 +26,14 @@ docker attach `docker-compose ps -q`
 
 # Detach from shell by pressing CTRL+P, CTRL+Q
 
+```
+
+## Docker Image on Docker Hub
+
+Get prebuild Docker image by running
+
+``` sh
+docker pull rayson/spigot
 ```
 
 [Spigot]: https://www.spigotmc.org/wiki/about-spigot/
