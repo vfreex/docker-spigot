@@ -6,8 +6,8 @@ services:
         user: spigot
         ports:
             - "25565:25565/tcp"
-        tty: true
-        stdin_open: true
+        tty: false
+        stdin_open: false
         volumes:
             - "./data/spigot:/opt/spigot/data:Z"
 
