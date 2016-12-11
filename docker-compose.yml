@@ -1,7 +1,7 @@
 version: "2"
 services:
     spigot:
-        image: local/spigot:1.9.4-R0.1-1
+        image: rayson/spigot:1.10.2
         build: spigot
         user: spigot
         ports:
