@@ -1,13 +1,12 @@
 version: "2"
 services:
     spigot:
-        image: rayson/spigot:1.10.2
+        image: rayson/spigot
         build: spigot
-        user: spigot
-        ports:
-            - "25565:25565/tcp"
-        tty: false
-        stdin_open: false
         volumes:
-            - "./data/spigot:/opt/spigot/data:Z"
-
+            - spigot-data:/opt/spigot/data:Z
+        ports:
+            - 25565:25565/tcp
+            
+volumes:
+    spigot-data:
